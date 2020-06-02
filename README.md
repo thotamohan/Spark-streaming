@@ -29,10 +29,8 @@ Yelp Business Data i.e., business_first.json and business_second.json
 * I implemented the Bloom Filtering algorithm to estimate whether the city of a business in
 business_second.json has shown before in business_first.json. 
 * We need to find proper bit array size, hash functions and the number of hash functions in the Bloom Filtering algorithm.
-Some possible the hash functions are:
-
+* Some possible the hash functions are:
   f(x)= (ax + b) % m or f(x) = ((ax + b) % p) % m
-
   where p is any prime number and m is the length of the filter bit array. You can use any combination for the parameters (a, b, p). The   hash functions should keep the same once you created them.
 * Since the city of a business is a string, you need to convert it into an integer and then apply hash functions to it., the following  code shows one possible solution:
 
@@ -50,7 +48,7 @@ the code ran within 60 seconds and it is evaluated on the false positive rate (F
 estimations from groups of hash functions) to estimate the number of unique cities within a
 window in the data stream. 
 * I found proper hash functions and the proper number of hash functions in the Flajolet-Martin algorithm.
-
+![Image of Sensorplacement](spark.image)
 
 ## **Task3: Fixed Size Sampling on Twitter Streaming**
 * You will use Twitter API of streaming to implement the fixed size sampling method (Reservoir
