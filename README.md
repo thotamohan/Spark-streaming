@@ -33,10 +33,9 @@ business_second.json has shown before in business_first.json.
   f(x)= (ax + b) % m or f(x) = ((ax + b) % p) % m
   where p is any prime number and m is the length of the filter bit array. You can use any combination for the parameters (a, b, p). The   hash functions should keep the same once you created them.
 * Since the city of a business is a string, you need to convert it into an integer and then apply hash functions to it., the following  code shows one possible solution:
-
-import binascii
-
-int(binascii.hexlify(s.encode('utf8')),16)
+  * import binascii
+    
+    int(binascii.hexlify(s.encode('utf8')),16)
 
 (We only treat the exact the same strings as the same cities. I did not consider alias. If one record in the business_second.json file does not contain the city field, or the city field is empty, I predicted zero for that record.) 
 
@@ -48,7 +47,7 @@ the code ran within 60 seconds and it is evaluated on the false positive rate (F
 estimations from groups of hash functions) to estimate the number of unique cities within a
 window in the data stream. 
 * I found proper hash functions and the proper number of hash functions in the Flajolet-Martin algorithm.
-![Image of Sensorplacement](spark.image)
+![Image of Sensorplacement](https://github.com/thotamohan/Spark-streaming/blob/master/spark.image.png)
 
 ## **Task3: Fixed Size Sampling on Twitter Streaming**
 * You will use Twitter API of streaming to implement the fixed size sampling method (Reservoir
