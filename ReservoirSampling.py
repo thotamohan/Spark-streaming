@@ -9,10 +9,10 @@ from tweepy.streaming import StreamListener
 
 
 
-cons_key = 'HTOhfvsh65MsQY0TCFICRNpEj'
-cons_Sec_Key = '8AXBEpGogYiMBbcLtamrvtoQA7fxxgF3IpqilcXJT7z1EQm9cD'
-aces_token = '1213856383126265856-P48KKzGX6soIaJkCIsRSnpsFp8HufJ'
-aces_sec_Key = 'Yq3rFjJmiY0FIt3l30ZhIlk9nPXgr6aKLDmpIMhPWDZGs'
+cons_key = ''
+cons_Sec_Key = ''
+aces_token = ''
+aces_sec_Key = ''
 
 class Stream_listener(StreamListener):
     def on_error(self, status):
